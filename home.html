@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<title>vWork</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvvj_OUxrZtPCzFU-qpqZjK-bOGOW6wKs&sensor=false&libraries=places"></script>
+<!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>-->
+	<link rel="stylesheet" type="text/css" href="app.css"/>
+</head>
+<body>
+	<header>
+		<h1>Ride Me</h1>
+	</header>
+	<div class="map-container">
+		<div id="map-canvas" style="width: 100%; height: 500px"></div>
+	</div>
+	<footer>
+		<form method="POST" action = "/login">
+            <input type="text" id ="name" name="test" placeholder="name">
+			<input type="text" id="pickup-loc" name="test" placeholder="pickup location">
+			<input type="text" id="searchTextField" name="test" placeholder="drop off location">
+			<input type="date" id="" name="test" placeholder="pickup date">
+			<input type="time" id="" name="test" placeholder="pickup time">
+			<label>passengers</label>
+			<select id = "num-passenger">
+               <option value = "1">1</option>
+               <option value = "2">2</option>
+               <option value = "3">3</option>
+               <option value = "4">4</option>
+               <option value = "5">5</option>
+               <option value = "6">6</option>
+               <option value = "7">7</option>
+               <option value = "8">8</option>
+               <option value = "9">9</option>
+               <option value = "10">10</option>
+               <option value = "11">11</option>
+               <option value = "12">12</option>
+             </select>
+			<label>vehicle</label>
+			<select id = "vehicle-type">
+               <option value = "sedan">Sedan</option>
+               <option value = "limo">Limo</option>
+               <option value = "suv">SUV</option>
+               <option value = "bus">Bus</option>
+             </select>
+			<input type="submit" id="" name="submit">
+		</form>
+	</footer>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
